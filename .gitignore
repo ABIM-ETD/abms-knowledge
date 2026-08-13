@@ -1,0 +1,4 @@
+data/cache/
+__pycache__/
+.claude/settings.local.json
+ABMS 2026/.obsidian/workspace.json

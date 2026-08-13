@@ -1,0 +1,52 @@
+---
+type: "speaker"
+conference: "ABMS Conference 2026"
+name: "Audra Williams, MD, MPH"
+role: "Residency Program Director - Obstetrics and Gynecology"
+organization: "University of Alabama at Birmingham"
+title_line: "Residency Program Director - Obstetrics and Gynecology"
+topics:
+  - "Research and Innovations"
+sessions:
+  - "2026-09-18 Entrust & Deliver- Advancing Competency-Based Training in Operative Vaginal Delivery"
+session_count: 1
+photo: 
+presenter_id: "2429198"
+url: "https://abmsconference2026.eventscribe.net/ajaxcalls/presenterInfo.asp?PresenterId=2429198"
+tags:
+  - "abms2026"
+  - "speaker"
+---
+
+# Audra Williams, MD, MPH
+
+*Residency Program Director - Obstetrics and Gynecology*
+
+**Topics:** [[Research and Innovations]]
+
+## Sessions
+
+- [[2026-09-18 Entrust & Deliver- Advancing Competency-Based Training in Operative Vaginal Delivery|Entrust & Deliver: Advancing Competency-Based Training in Operative Vaginal Delivery]] — Friday 2026-09-18, 8:30 AM - 9:30 AM CST
+
+## Biography
+
+University of Alabama at Birmingham
+
+Disclosure information not submitted.
+
+Presentation(s):
+
+Entrust & Deliver: Advancing Competency-Based Training in Operative Vaginal Delivery
+
+Friday, September 18, 2026
+
+8:30 AM - 9:30 AM CST
+
+|Technical Support
+
+|Give Feedback
+
+## Links
+
+- [[ABMS Conference 2026]]
+- [Profile on EventScribe](https://abmsconference2026.eventscribe.net/ajaxcalls/presenterInfo.asp?PresenterId=2429198)
