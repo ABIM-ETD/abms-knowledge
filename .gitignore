@@ -1,4 +1,2 @@
-data/cache/
-__pycache__/
-.claude/settings.local.json
+.DS_Store
 ABMS 2026/.obsidian/workspace.json

@@ -1,37 +1,11 @@
 # ABMS Conference 2026 — Obsidian Vault
 
 An Obsidian vault of the topics, sessions and speakers at ABMS Conference 2026
-(September 15–18, 2026), scraped from the conference programme.
+(September 15–18, 2026), built from the conference programme.
 
 ## Usage
 
-```bash
-python3 scrape.py          # fetch + parse -> data/abms2026.json
-python3 build_vault.py     # generate the "ABMS 2026" vault
-python3 scrape.py --refresh   # bypass the on-disk HTTP cache
-```
-
 Open the `ABMS 2026` folder as a vault in Obsidian.
-
-## Where the data comes from
-
-`abmsconference.com/topics-2026` is a Squarespace page that embeds the real
-programme from **EventScribe** (Cadmium) via a `pym.js` iframe. The scraper
-skips the Squarespace wrapper and reads EventScribe directly:
-
-| Data | Endpoint |
-| --- | --- |
-| Agenda (all days) | `agenda.asp?pfp=BrowsebyDay&all=1` |
-| Topic tracks | `SearchByBucket.asp?f=TrackName` |
-| Speaker directory | `biography.asp?pfp=Speakers` |
-| Session detail | `fsPopup.asp?PresentationID=…&mode=presInfo` |
-| Speaker detail | `ajaxcalls/presenterInfo.asp?PresenterId=…` |
-
-All pages are server-rendered, so plain HTTP works — no browser automation.
-Responses are cached under `data/cache/` so re-runs are free.
-
-Fetches shell out to `curl` because this machine's Python trust store rejects
-the origin's certificate chain while curl's accepts it.
 
 ## Vault structure
 
@@ -58,12 +32,12 @@ TABLE start, topics, speakers FROM #session WHERE category = "session"
 
 ## Notes on source-data quality
 
-The scrape reproduces the programme as published; these quirks are the source's,
-not the scraper's.
+The vault reproduces the programme as published; these quirks are the
+source's, not the vault's.
 
-- **Duplicate tracks from typos.** EventScribe exposes 9 track buckets that are
-  really 5 topics. `build_vault.py` merges them via `TRACK_ALIASES` and each
-  topic note records the raw variants it absorbed:
+- **Duplicate tracks from typos.** The published programme exposed 9 track
+  buckets that are really 5 topics. Each topic note records the raw variants
+  it absorbed:
   - "Board Cert**f**ication and Professionalism" → Board Certification and Professionalism
   - "Artificial Intelligence (**Al**)" (lowercase L) → Artificial Intelligence (AI)
   - "Emerging Landscape of the Physician **Work Force**" and
